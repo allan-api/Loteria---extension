@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta http-equiv="Content-Language" content="pt-br">
+        <link type="text/css" rel="stylesheet" href="css/styles.css" />
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    </head>
+    <body>
+
+    <center><a href="https://www.maniadeganhar.com.br/" target="_blank" title="https://www.maniadeganhar.com.br/" >[www.maniadeganhar.com.br]</a></center>
+        <section class="container">
+            <div class="dropdown-dark" style="width:100%;">
+                <select name="one" id="select-jogo" class="dropdown-select">
+                    <option value="">Selecione uma loteria</option>
+                    <option value="1">Lotofacil</option>
+                    <option value="3">Lotomania</option>
+                    <option value="2">Megasena</option>
+                    <option value="4">Quina</option>
+                </select>
+            </div>
+        </section>
+        
+        <input type="hidden" name="ultimo_sorteio" value="0">
+        <input type="hidden" id="flg" value="0">
+
+        <div id="loterias-widget">
+            <div class="container">			
+                <div class="row">
+                    <div id="header">
+                        <center><img src="img/mega-sena.png"></center>
+                    </div>						
+                </div>
+            </div>
+            <div id="sorteio" >
+                <div id="data">
+                    <a href="#" id="previous" title="Regredir"><< ANTERIOR</a>
+                </div>
+                
+                <div id="num_conc" style="float: right;">
+                    <a href="#" id="next" title="Avançar">PRÓXIMO ></a>
+                </div>
+            </div>
+            <hr>
+            <div class="container">	
+                <div id="sorteio" >
+                    <div id="data">
+                        <p style="font-weight: bold;font-size: 13px; font-family: verdana;">DATA SORTEIO</p>
+                        <p id="data-sorteio" style="line-height: 0em;"></p>
+                    </div>
+                    <div id="num_conc" style="float: right; width: 150px;">
+                        <p style="font-weight: bold;font-size: 13px; font-family: verdana;">Nº CONCURSO</p>
+                        <div class="row" >
+                            <input type="number" value="" min="1"  id="numero-concurso"  class="numConcurso" >
+                            <input type="button" value="Buscar" class="buscar" id="search" title="Buscar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div id="dezenas">
+                    <img src="img/lazyload.gif" alt="loading...">
+                </div>			
+            </div>			
+            <hr>
+            <div class="container" style="margin-top: -20px;">	
+                <div id="sorteio">
+                    <div id="primeira"></div>	
+                    
+                    <div id="segunda"></div>
+                    
+                    <div id="terceira"></div>										
+                </div>
+            </div>
+        </div>
+        <script src="js/app.js"></script>
+        <script src="js/resultado.js"></script>
+        <script src="js/library.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
